@@ -96,8 +96,10 @@ Now go eat some cake. You have earned it.`;
 const MARQUEE = ['HAPPY BIRTHDAY CHOCO', '🍫', 'TANUSHREE KHAN', '💗', '16 SEPTEMBER', '🎂',
                  'MY FAVOURITE PERSON', '✨', 'I LOVE YOU', '🎁'];
 
-const NO_LABELS = ['No', 'Are you sure?', 'Really??', 'Think again 🥺', 'Last chance!',
-                   'You cannot catch me', 'Stop it', 'This button is shy', 'Nope!', 'Give up 😌'];
+// The No button runs away on hover/tap, changing its label each time.
+// After the last label ("Last chance!") the next attempt makes it give up.
+const NO_LABELS = ['No', 'Are you sure?', 'Really??', 'Think again 🥺', 'You cannot catch me',
+                   'This button is shy', 'Stop it', 'Nope!', 'Give up 😌', 'Last chance!'];
 
 const BIRTHDAY = { month: 9, day: 16 }; // 16 September
 
