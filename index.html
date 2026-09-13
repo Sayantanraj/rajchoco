@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Happy Birthday Choco 🍫💗</title>
+<meta name="description" content="A little corner of the internet made only for Tanushree 'Choco' Khan.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍫</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Caveat:wght@500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+<!-- ================= PRELOADER ================= -->
+<div id="preloader">
+  <div class="pl-inner">
+    <div class="pl-choco">🍫</div>
+    <div class="pl-bar-wrap"><div class="pl-bar" id="pl-bar"></div></div>
+    <div class="pl-txt" id="pl-txt">melting some chocolate...</div>
+  </div>
+</div>
+
+<!-- ================= BACKGROUND LAYERS ================= -->
+<div id="bg-aurora"></div>
+<div id="bg-grain"></div>
+<canvas id="fx"></canvas>
+<canvas id="confetti"></canvas>
+<div class="balloons" id="balloons"></div>
+
+<!-- ================= CURSOR ================= -->
+<div class="cur" id="cur-ring"></div>
+<div class="cur" id="cur-dot"></div>
+<div id="progress"></div>
+
+<!-- ================= GATE ================= -->
+<div id="gate">
+  <div>
+    <div class="gate-hi">Psst... Tanushree 👀</div>
+    <div class="gift" id="gift">
+      <div class="gift-glow"></div>
+      <div class="gift-body"><div class="gift-ribbon-v"></div></div>
+      <div class="gift-lid"></div>
+      <div class="gift-bow">🎀</div>
+    </div>
+    <div class="gate-cta">Tap the gift, birthday girl 🎁</div>
+    <div class="gate-sub">it took me a while, be nice</div>
+  </div>
+</div>
+
+<!-- ================= SITE ================= -->
+<main id="site">
+
+  <!-- ---------- HERO ---------- -->
+  <section id="hero">
+    <div class="wrap">
+      <div class="hero-tag">it's finally here...</div>
+      <h1 class="hero-title">
+        <span class="ln" data-text="HAPPY"></span>
+        <span class="ln" data-text="BIRTHDAY"></span>
+        <span class="ln" data-text="CHOCO"></span>
+      </h1>
+      <div class="hero-name">Tanushree Khan</div>
+      <div class="hero-date">🎂 16 September 🎂</div>
+    </div>
+    <div class="scroll-hint">scroll, there's more<div class="mouse"></div></div>
+  </section>
+
+  <div class="marq">
+    <div class="marq-in" id="marq"></div>
+  </div>
+
+  <!-- ---------- COUNTDOWN ---------- -->
+  <section id="countdown">
+    <div class="wrap">
+      <div class="eyebrow rv">the wait</div>
+      <h2 class="h2 rv">Counting Down To You</h2>
+      <p class="h2-sub rv">Every single year, this is my favourite date on the calendar. Not close. Not second. First.</p>
+      <div class="cd-grid rv-s">
+        <div class="cd-cell"><div class="cd-num" id="cd-d">00</div><div class="cd-lbl">Days</div></div>
+        <div class="cd-cell"><div class="cd-num" id="cd-h">00</div><div class="cd-lbl">Hours</div></div>
+        <div class="cd-cell"><div class="cd-num" id="cd-m">00</div><div class="cd-lbl">Minutes</div></div>
+        <div class="cd-cell"><div class="cd-num" id="cd-s">00</div><div class="cd-lbl">Seconds</div></div>
+      </div>
+      <div class="cd-today" id="cd-today">
+        <b>IT'S TODAY!!! 🎉</b>
+        <p class="h2-sub">The world got a lot better on this day. Go on, be spoiled.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- CHOCO METER ---------- -->
+  <section id="meter">
+    <div class="wrap">
+      <div class="eyebrow rv">official scientific data</div>
+      <h2 class="h2 rv">The Choco Meter™</h2>
+      <p class="h2-sub rv">Independently verified by me. Peer reviewed by also me. Results are conclusive.</p>
+      <div class="stats" id="stats"></div>
+    </div>
+  </section>
+
+  <!-- ---------- PHOTO WALL ---------- -->
+  <section id="gallery">
+    <div class="wrap">
+      <div class="eyebrow rv">the evidence</div>
+      <h2 class="h2 rv">Our Little Museum</h2>
+      <p class="h2-sub rv">Proof that I've been the luckiest person alive for a while now. Tap any photo to make it big.</p>
+      <div class="wall" id="wall"></div>
+    </div>
+  </section>
+
+  <!-- ---------- TIMELINE ---------- -->
+  <section id="story">
+    <div class="wrap">
+      <div class="eyebrow rv">chapter by chapter</div>
+      <h2 class="h2 rv">The Story Of Us</h2>
+      <div class="tl" id="tl">
+        <div class="tl-rail"></div>
+        <div class="tl-line" id="tl-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- LETTER ---------- -->
+  <section id="letter-sec">
+    <div class="wrap">
+      <div class="eyebrow rv">read this slowly</div>
+      <h2 class="h2 rv">A Letter For You</h2>
+      <div class="letter rv-s" id="letter">
+        <h3>My dearest Choco,</h3>
+        <div class="letter-body" id="letter-body"></div>
+        <div class="sign">Always yours,<br>your favourite idiot 💗</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- REASONS ---------- -->
+  <section id="reasons-sec">
+    <div class="wrap">
+      <div class="eyebrow rv">warning: sappy</div>
+      <h2 class="h2 rv">Reasons I'm Obsessed With You</h2>
+      <p class="h2-sub rv">Flip every card. Yes, all of them. I'm counting.</p>
+      <div class="reasons" id="reasons"></div>
+    </div>
+  </section>
+
+  <!-- ---------- QUOTES ---------- -->
+  <section id="quotes-sec">
+    <div class="wrap">
+      <div class="eyebrow rv">words that stole my job</div>
+      <h2 class="h2 rv">Things Said Better Than I Could</h2>
+      <div class="qstage" id="qstage"></div>
+      <div class="qdots" id="qdots"></div>
+    </div>
+  </section>
+
+  <!-- ---------- THE QUESTION ---------- -->
+  <section id="question">
+    <div class="wrap">
+      <div class="ask">
+        <div class="ask-q rv">Do you love me? 🥺</div>
+        <div class="ask-btns rv-s">
+          <button class="btn btn-yes" id="btn-yes">YES 💗</button>
+          <button class="btn btn-no" id="btn-no">No</button>
+        </div>
+        <div class="ask-result" id="ask-result"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- CAKE ---------- -->
+  <section id="cake-sec">
+    <div class="wrap">
+      <div class="eyebrow rv">the main event</div>
+      <h2 class="h2 rv">Blow The Candles, Choco</h2>
+      <p class="h2-sub rv">Close your eyes, make a wish, and tap the cake. (I already know what I wished for.)</p>
+      <div class="cake-stage rv-s">
+        <div class="cake" id="cake">
+          <div class="candles" id="candles"></div>
+          <div class="cake-body" id="cake-body">
+            <div class="tier tier-top"></div>
+            <div class="tier tier-mid"></div>
+            <div class="tier tier-bot"></div>
+          </div>
+          <div class="plate"></div>
+          <div class="slice-plate"></div>
+          <div class="cut-line" id="cut-line"></div>
+          <div class="knife" id="knife">🔪</div>
+        </div>
+      </div>
+      <div class="cake-hint" id="cake-hint">👆 tap the cake</div>
+      <div class="wish" id="wish"></div>
+    </div>
+  </section>
+
+  <!-- ---------- FINALE ---------- -->
+  <section id="finale">
+    <div class="wrap">
+      <div class="big-love rv-s">I LOVE YOU,<br>CHOCO</div>
+      <div class="heart-beat">💗</div>
+      <p class="finale-note rv">Thank you for being born. Thank you for picking me.<br>
+      Here's to your 16th of September, and every single one after it.</p>
+      <div class="finale-sign">— made with too much love (and way too many hours) for you 🍫</div>
+    </div>
+  </section>
+
+  <footer>HAPPY BIRTHDAY TANUSHREE &nbsp;·&nbsp; 16 SEPTEMBER &nbsp;·&nbsp; MADE ONLY FOR YOU</footer>
+</main>
+
+<!-- ================= LIGHTBOX ================= -->
+<div id="lightbox">
+  <button id="lb-close">✕</button>
+  <button class="lb-btn" id="lb-prev">‹</button>
+  <button class="lb-btn" id="lb-next">›</button>
+  <figure id="lb-fig">
+    <img id="lb-img" alt="A photo of us">
+    <figcaption id="lb-cap"></figcaption>
+  </figure>
+</div>
+
+<!-- ================= FLOATING BUTTONS ================= -->
+<button class="fab" id="btn-music" title="Play / pause the birthday song">🎵</button>
+<button class="fab" id="btn-hearts" title="Throw confetti!">🎉</button>
+
+<script src="script.js"></script>
+</body>
+</html>

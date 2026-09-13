@@ -1,0 +1,53 @@
+========================================
+  FOR CHOCO 🍫 — how to make it yours
+========================================
+
+TO OPEN IT:  double-click  index.html
+
+Everything you'd want to change is at the TOP of  script.js
+in the block marked "1. CONTENT". Open it in Notepad and edit
+the text between the quote marks. Nothing else needs touching.
+
+WHAT'S IN THERE
+---------------
+PHOTOS    - the 16 photos + the handwritten caption under each one.
+            Change any "cap:" text to a real memory from that photo.
+            That's the single biggest upgrade you can make.
+
+TIMELINE  - "The Story Of Us". Your real journey: the first Instagram
+            message (18 Jan 2025), Saraswati Pujo in Serampore, the month
+            apart, Durga Pujo, the Diwali storm, and getting the job.
+            This is the part she'll re-read.
+
+REASONS   - 6 flip cards (3 per row on desktop). Add your inside jokes here.
+
+STATS     - the funny Choco Meter bars.
+
+LETTER    - the typed-out love letter. Rewrite it in your own words if
+            you want — keep the line breaks (blank line between paragraphs).
+
+QUOTES    - the rotating quotes.
+
+BIRTHDAY  - { month: 9, day: 16 } — the countdown auto-targets the next
+            16 September, and on the day itself the whole page switches
+            to "IT'S TODAY!!!" and throws confetti by itself.
+
+WHAT SHE CAN DO ON THE PAGE
+---------------------------
+ - tap the gift box to open the site
+ - tap any photo to blow it up (arrow keys work too)
+ - flip all 6 reason cards
+ - try to click "No" on "Do you love me?" (good luck, it runs away)
+ - tap the cake to blow out the candles -> confetti + balloons
+ - 🎵 button plays / pauses your song (17.mp3) — it also starts by itself
+   when she opens the gift. To use a different song, replace 17.mp3 or change
+   SONG_FILE in script.js
+ - 🎉 button throws confetti whenever she wants
+
+SENDING IT TO HER
+-----------------
+The folder must stay together — index.html, style.css, script.js and all
+16 .jpeg files AND 17.mp3 in the SAME folder. Zip the whole folder and send it, or
+ask me to publish it as a private link she can open on her phone.
+
+Happy birthday to Tanushree. 💗
